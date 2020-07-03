@@ -19,7 +19,7 @@ type LoginResponse struct {
 }
 
 // Handlers
-func login(c echo.Context) (err error) {
+func Login(c echo.Context) (err error) {
 	req := new(LoginRequest)
 	c.Bind(req)
 	log.Printf("Login req data: %+v ", req)

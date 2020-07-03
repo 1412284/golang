@@ -11,7 +11,7 @@ type X struct {
 	TEXT string `json:"text"`
 }
 
-func hello(c echo.Context) error {
+func Hello(c echo.Context) error {
 	hello := &X{
 		TEXT: "hello",
 	}
